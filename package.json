@@ -1,0 +1,40 @@
+{
+  "name": "vue-douban-movie",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhuaF/vue-douban-movie.git"
+  },
+  "keywords" : [
+    "vue",
+    "webpack"
+  ],
+  "author": "Miwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhuaF/vue-douban-movie/issues"
+  },
+  "homepage": "https://github.com/minhuaF/vue-douban-movie#readme",
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-runtime": "^5.8.0",
+    "webpack": "^2.0.0",  
+    "css-loader": "^0.23.0",
+    "style-loader": "^0.13.0",
+    "vue-loader": "^7.3.0",
+    "vue-html-loader": "^1.0.0"
+  },
+  "dependencies": {
+    "vue": "^2.3.4"
+  }
+}
