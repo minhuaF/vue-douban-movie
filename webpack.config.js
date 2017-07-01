@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: './dist',
+    path: '/dist',
     publicPath: 'dist/',
     filename: 'build.js'
   },
@@ -9,13 +9,18 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /node_modules/
       },
       {
         test : /\.vue$/,
-        loader: 'vue'
+        loader: 'vue-loader'
       }
     ]
+  },
+  resolve : {
+    alias: {
+      'vue' : 'vue/dist/vue.js'
+    }
   }
 }
