@@ -1,41 +1,23 @@
 <template>
-  <div>
-    <div class="message"> Value is : {{ count }} </div>
-    <a href="#" @click.prevent="increment"> Increment </a>
-    <ul>
-      <li v-for="todo in todos">
-        {{ todo.text }}
-      </li>
-    </ul>
-    <button @click.prevent="showMsg">点击事件</button>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        count : 0,
-        todos : [
-          { text: 'Learn Javascript' },
-          { text: 'Learn Vue.js' },
-          { text: 'BUild Something Awesome' }
-        ]
-      }
-    },
-    methods: {
-      increment () {
-        this.count ++;
-      },
-      showMsg () {
-        console.log('---')
-      }
-    }
-  }
+export default {
+  name: 'app'
+}
 </script>
 
 <style>
-  .message {
-    color: blue
-  }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
