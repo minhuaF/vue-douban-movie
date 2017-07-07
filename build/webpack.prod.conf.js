@@ -55,6 +55,8 @@ var webpackConfig = merge(baseWebpackConfig, {
       filename: process.env.NODE_ENV === 'testing'
         ? 'index.html'
         : config.build.index,
+      title: config.build.title,
+      favicon: config.build.favicon,
       template: 'index.html',
       inject: true,
       minify: {

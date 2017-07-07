@@ -1,4 +1,4 @@
-# vue-douban-movie
+# douban-movie
 
 > A Vue.js project
 
@@ -28,7 +28,3 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-
-# Project Description
-用 vue-cli 脚手架搭建 豆瓣电影 项目

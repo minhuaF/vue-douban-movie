@@ -4,6 +4,8 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
+    title: 'build douban-movie',
+    favicon: path.resolve(__dirname, '../src/assets/icon.jpg'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
@@ -23,7 +25,9 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
+    title: 'dev douban-movie',
+    favicon: path.resolve(__dirname, '../src/assets/icon.jpg'),
+    port: 3333,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',

@@ -8,5 +8,11 @@ module.exports = {
       ? config.build.productionSourceMap
       : config.dev.cssSourceMap,
     extract: isProduction
-  })
+  }),
+  postcss: [
+    require('postcss-pxtorem')({
+      rootValue: 100,
+      propWhiteList: []
+    })
+  ]
 }
