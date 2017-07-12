@@ -1,32 +1,38 @@
 <template>
-  <div id="home">
-    <Header></Header>
-    {{ title }}
+  <div>
+    <HeaderComponent></HeaderComponent>
+    <div class="page">
+      <div class="card">
+        <CardComponet></CardComponet>
+        <CardComponet></CardComponet>
+        <CardComponet></CardComponet>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 
-import Header from './Header'
+import HeaderComponent from './HeaderComponent'
+import CardComponet from './CardComponent'
 
 export default {
   name: 'home',
   components: {
-    Header
+    HeaderComponent,
+    CardComponet
   },
   data () {
     return {
-      title: 'Home'
+      title: 'home'
     }
   }
 }
 </script>
 
-
 <style lang="scss" scoped="" type="text/css">
-  $nav-color: #F90;
-  #home {
-    color: $nav-color;
-    font-size: 16px
+  .page{
+    margin-top: 94px
   }
+
 </style>
