@@ -23,17 +23,17 @@ export default new Router({
       }
     },
     {
-      path: '/login',
-      name: 'login',
-      component: resolve => {
-        require(['@/components/Movie/Login'], resolve)
-      }
-    },
-    {
       path: '/movie',
       name: 'home',
       component: resolve => {
         require(['@/components/Movie/Home'], resolve)
+      }
+    },
+    {
+      path: '/movie/login',
+      name: 'login',
+      component: resolve => {
+        require(['@/components/Movie/Login'], resolve)
       }
     },
     {
@@ -47,13 +47,13 @@ export default new Router({
         {
           path: 'info',
           component: resolve => {
-            require(['@/components/Movie/components/MovieInfo'])
+            require(['@/components/Movie/components/MovieInfo'], resolve)
           }
         },
         {
           path: 'comment',
           component: resolve => {
-            require(['@/components/Movie/components/MovieComment'])
+            require(['@/components/Movie/components/MovieComment'], resolve)
           }
         }
       ]
@@ -62,7 +62,7 @@ export default new Router({
       path: '*',
       name: 'notFound',
       component: resolve => {
-        require(['@/components/NotFoundComponent'])
+        require(['@/components/NotFoundComponent'], resolve)
       }
     }
   ]
